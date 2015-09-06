@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>UnityEditor.UI</name>
+  </assembly>
+  <members>
+    <member name="T:UnityEditor.Events.UnityEventTools">
+      <summary>
+        <para>Editor tools for working with persistent UnityEvents.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.EventSystems.EventSystemEditor">
+      <summary>
+        <para>Custom Editor for the EventSystem Component.</para>
+        <para>Extend this class to write a custom editor for an EventSystem-derived component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.EventSystems.EventTriggerEditor">
+      <summary>
+        <para>Custom Editor for the EventTrigger Component.</para>
+        <para>Extend this class to write a custom editor for an EventTrigger-derived component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.AnimationTriggersDrawer">
+      <summary>
+        <para>PropertyDrawer for <see cref="AnimationTriggers"></see>.</para>
+        <para>This is a PropertyDrawer for <see cref="AnimationTriggers"></see> it is implemented using the standard unity <see cref="PropertyDrawer"></see> framework.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.AspectRatioFitterEditor">
+      <summary>
+        <para>Custom Editor for the AspectRatioFitter component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.ButtonEditor">
+      <summary>
+        <para>Custom Editor for the Button Component.</para>
+        <para>Extend this class to write a custom editor for an Button-derived component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.CanvasScalerEditor">
+      <summary>
+        <para>Custom Editor for the CanvasScaler component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.ColorBlockDrawer">
+      <summary>
+        <para>PropertyDrawer for <see cref="ColorBlock"></see>.</para>
+        <para>This is a PropertyDrawer for <see cref="ColorBlock"></see> it is implemented using the standard unity <see cref="PropertyDrawer"></see> framework.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.ContentSizeFitterEditor">
+      <summary>
+        <para>Custom Editor for the ContentSizeFitter Component.</para>
+        <para>Extend this class to write a custom editor for an ContentSizeFitter-derived component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.FontDataDrawer">
+      <summary>
+        <para>PropertyDrawer for <see cref="FontData"></see>.</para>
+        <para>This is a PropertyDrawer for <see cref="FontData"></see> it is implemented using the standard unity <see cref="PropertyDrawer"></see> framework.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.GraphicEditor">
+      <summary>
+        <para>Extend this class to write your own graphic editor.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.GridLayoutGroupEditor">
+      <summary>
+        <para>Custom Editor for the GridLayout Component.</para>
+        <para>Extend this class to write a custom editor for an GridLayout-derived component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.HorizontalOrVerticalLayoutGroupEditor">
+      <summary>
+        <para>The Editor for the <see cref="HorizontalOrVerticalLayoutGroup"></see> class.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.ImageEditor">
+      <summary>
+        <para>Custom Editor for the Image Component.</para>
+        <para>Extend this class to write a custom editor for an Image-derived component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.InputFieldEditor">
+      <summary>
+        <para>Custom Editor for the InputField Component.</para>
+        <para>Extend this class to write a custom editor for an InputField-derived component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.LayoutElementEditor">
+      <summary>
+        <para>Editor for the <see cref="LayoutElement"></see> component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.NavigationDrawer">
+      <summary>
+        <para>PropertyDrawer for <see cref="Navigation"></see>.</para>
+        <para>This is a PropertyDrawer for <see cref="Navigation"></see> it is implemented using the standard unity <see cref="PropertyDrawer"></see> framework.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.RawImageEditor">
+      <summary>
+        <para>Custom editor for RawImage.</para>
+        <para>Extend this class to write a custom editor for a RawImage-derived component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.ScrollbarEditor">
+      <summary>
+        <para>Custom Editor for the Scrollbar Component.</para>
+        <para>Extend this class to write a custom editor for an Scrollbar-derived component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.ScrollRectEditor">
+      <summary>
+        <para>Editor for the <see cref="ScrollRect"></see> component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.SelectableEditor">
+      <summary>
+        <para>Custom Editor for the Selectable Component.</para>
+        <para>Extend this class to write a custom editor for an Selectable-derived component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.SelfControllerEditor">
+      <summary>
+        <para>Base class for custom editors that are for components that implement the SelfControllerEditor interface.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.SliderEditor">
+      <summary>
+        <para>Custom Editor for the Slider Component.</para>
+        <para>Extend this class to write a custom editor for an Slider-derived component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.SpriteStateDrawer">
+      <summary>
+        <para>PropertyDrawer for <see cref="SpriteState"></see>.</para>
+        <para>This is a PropertyDrawer for <see cref="SpriteState"></see> it is implemented using the standard unity <see cref="PropertyDrawer"></see> framework.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.TextEditor">
+      <summary>
+        <para>Custom Editor for the Text Component.</para>
+        <para>Extend this class to write a custom editor for an Text-derived component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UI.ToggleEditor">
+      <summary>
+        <para>Custom Editor for the Toggle Component.</para>
+        <para>Extend this class to write a custom editor for an Toggle-derived component.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.UIOrientation">
+      <summary>
+        <para>Default mobile device orientation.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.AddBoolPersistentListener(UnityEngine.Events.UnityEventBase,System.Boolean)">
+      <summary>
+        <para>Adds a persistent, preset call to the listener.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="argument">Argument to use when invoking.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.AddFloatPersistentListener(UnityEngine.Events.UnityEventBase,System.Single)">
+      <summary>
+        <para>Adds a persistent, preset call to the listener.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="argument">Argument to use when invoking.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.AddIntPersistentListener(UnityEngine.Events.UnityEventBase,System.Int32)">
+      <summary>
+        <para>Adds a persistent, preset call to the listener.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="argument">Argument to use when invoking.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.AddObjectPersistentListener``1(UnityEngine.Events.UnityEventBase,``0)">
+      <summary>
+        <para>Adds a persistent, preset call to the listener.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="argument">Argument to use when invoking.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.AddPersistentListener(UnityEngine.Events.UnityEventBase)">
+      <summary>
+        <para>Adds a persistent, call to the listener. Will be invoked with the arguments as defined by the Event and sent from the call location.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.AddPersistentListener(UnityEngine.Events.UnityEvent,UnityEngine.Events.UnityAction)">
+      <summary>
+        <para>Adds a persistent, call to the listener. Will be invoked with the arguments as defined by the Event and sent from the call location.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="call">Function to call.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.AddPersistentListener">
+      <summary>
+        <para>Adds a persistent, call to the listener. Will be invoked with the arguments as defined by the Event and sent from the call location.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.AddPersistentListener">
+      <summary>
+        <para>Adds a persistent, call to the listener. Will be invoked with the arguments as defined by the Event and sent from the call location.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.AddPersistentListener">
+      <summary>
+        <para>Adds a persistent, call to the listener. Will be invoked with the arguments as defined by the Event and sent from the call location.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.AddPersistentListener">
+      <summary>
+        <para>Adds a persistent, call to the listener. Will be invoked with the arguments as defined by the Event and sent from the call location.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.AddStringPersistentListener(UnityEngine.Events.UnityEventBase,System.String)">
+      <summary>
+        <para>Adds a persistent, preset call to the listener.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="argument">Argument to use when invoking.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.AddVoidPersistentListener(UnityEngine.Events.UnityEventBase,UnityEngine.Events.UnityAction)">
+      <summary>
+        <para>Adds a persistent, preset call to the listener.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="call">Function to call.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RegisterBoolPersistentListener(UnityEngine.Events.UnityEventBase,System.Int32,System.Boolean)">
+      <summary>
+        <para>Modifies the event at the given index.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="index">Index to modify.</param>
+      <param name="argument">Argument to use when invoking.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RegisterFloatPersistentListener(UnityEngine.Events.UnityEventBase,System.Int32,System.Single)">
+      <summary>
+        <para>Modifies the event at the given index.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="index">Index to modify.</param>
+      <param name="argument">Argument to use when invoking.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RegisterIntPersistentListener(UnityEngine.Events.UnityEventBase,System.Int32,System.Int32)">
+      <summary>
+        <para>Modifies the event at the given index.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="index">Index to modify.</param>
+      <param name="argument">Argument to use when invoking.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RegisterObjectPersistentListener``1(UnityEngine.Events.UnityEventBase,System.Int32,``0)">
+      <summary>
+        <para>Modifies the event at the given index.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="index">Index to modify.</param>
+      <param name="argument">Argument to use when invoking.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RegisterPersistentListener(UnityEngine.Events.UnityEvent,System.Int32,UnityEngine.Events.UnityAction)">
+      <summary>
+        <para>Modifies the event at the given index.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="index">Index to modify.</param>
+      <param name="call">Function to call.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RegisterPersistentListener(System.Int32)">
+      <summary>
+        <para>Modifies the event at the given index.</para>
+      </summary>
+      <param name="index">Index to modify.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RegisterPersistentListener(System.Int32)">
+      <summary>
+        <para>Modifies the event at the given index.</para>
+      </summary>
+      <param name="index">Index to modify.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RegisterPersistentListener(System.Int32)">
+      <summary>
+        <para>Modifies the event at the given index.</para>
+      </summary>
+      <param name="index">Index to modify.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RegisterPersistentListener(System.Int32)">
+      <summary>
+        <para>Modifies the event at the given index.</para>
+      </summary>
+      <param name="index">Index to modify.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RegisterStringPersistentListener(UnityEngine.Events.UnityEventBase,System.Int32,System.String)">
+      <summary>
+        <para>Modifies the event at the given index.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="index">Index to modify.</param>
+      <param name="argument">Argument to use when invoking.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RegisterVoidPersistentListener(UnityEngine.Events.UnityEventBase,System.Int32,UnityEngine.Events.UnityAction)">
+      <summary>
+        <para>Modifies the event at the given index.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="index">Index to modify.</param>
+      <param name="call">Function to call.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RemovePersistentListener(UnityEngine.Events.UnityEventBase,System.Int32)">
+      <summary>
+        <para>Removes the given function from the event.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="index">Index to remove (if specified).</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RemovePersistentListener(UnityEngine.Events.UnityEventBase,UnityEngine.Events.UnityAction)">
+      <summary>
+        <para>Removes the given function from the event.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="call">Function to remove (if specified).</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RemovePersistentListener(UnityEngine.Events.UnityEventBase)">
+      <summary>
+        <para>Removes the given function from the event.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RemovePersistentListener(UnityEngine.Events.UnityEventBase)">
+      <summary>
+        <para>Removes the given function from the event.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RemovePersistentListener(UnityEngine.Events.UnityEventBase)">
+      <summary>
+        <para>Removes the given function from the event.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.RemovePersistentListener(UnityEngine.Events.UnityEventBase)">
+      <summary>
+        <para>Removes the given function from the event.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+    </member>
+    <member name="M:UnityEditor.Events.UnityEventTools.UnregisterPersistentListener(UnityEngine.Events.UnityEventBase,System.Int32)">
+      <summary>
+        <para>Unregisters the given listener at the specified index.</para>
+      </summary>
+      <param name="unityEvent">Event to modify.</param>
+      <param name="index">Index to unregister.</param>
+    </member>
+    <member name="M:UnityEditor.EventSystems.EventSystemEditor.HasPreviewGUI">
+      <summary>
+        <para>Can this component be Previewed in its current state?</para>
+      </summary>
+      <returns>
+        <para>True if this component can be Previewed in its current state.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEditor.EventSystems.EventSystemEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.EventSystems.EventSystemEditor.OnPreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)">
+      <summary>
+        <para>Custom preview for Image component.</para>
+      </summary>
+      <param name="rect">Rectangle in which to draw the preview.</param>
+      <param name="background">Background image.</param>
+    </member>
+    <member name="M:UnityEditor.EventSystems.EventSystemEditor.RequiresConstantRepaint">
+      <summary>
+        <para>Does this edit require to be repainted constantly in its current state?</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.EventSystems.EventTriggerEditor.OnInspectorGUI">
+      <summary>
+        <para>Implement specific EventTrigger inspector GUI code here. If you want to simply extend the existing editor call the base OnInspectorGUI () before doing any custom GUI code.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.AspectRatioFitterEditor.OnInspectorGUI">
+      <summary>
+        <para>See Editor.OnInspectorGUI.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.ButtonEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.CanvasScalerEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.ContentSizeFitterEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.GraphicEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.GridLayoutGroupEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.HorizontalOrVerticalLayoutGroupEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.ImageEditor.GetInfoString">
+      <summary>
+        <para>A string cointaining the Image details to be used as a overlay on the component Preview.</para>
+      </summary>
+      <returns>
+        <para>The Image details.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEditor.UI.ImageEditor.HasPreviewGUI">
+      <summary>
+        <para>Can this component be Previewed in its current state?</para>
+      </summary>
+      <returns>
+        <para>True if this component can be Previewed in its current state.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEditor.UI.ImageEditor.OnInspectorGUI">
+      <summary>
+        <para>Implement specific ImageEditor inspector GUI code here. If you want to simply extend the existing editor call the base OnInspectorGUI () before doing any custom GUI code.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.ImageEditor.OnPreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)">
+      <summary>
+        <para>Custom preview for Image component.</para>
+      </summary>
+      <param name="rect">Rectangle in which to draw the preview.</param>
+      <param name="background">Background image.</param>
+    </member>
+    <member name="M:UnityEditor.UI.InputFieldEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.LayoutElementEditor.OnInspectorGUI">
+      <summary>
+        <para>See: <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.RawImageEditor.GetInfoString">
+      <summary>
+        <para>A string cointaining the Image details to be used as a overlay on the component Preview.</para>
+      </summary>
+      <returns>
+        <para>The RawImage details.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEditor.UI.RawImageEditor.HasPreviewGUI">
+      <summary>
+        <para>Can this component be Previewed in its current state?</para>
+      </summary>
+      <returns>
+        <para>True if this component can be Previewed in its current state.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEditor.UI.RawImageEditor.OnInspectorGUI">
+      <summary>
+        <para>Implement specific RawImage inspector GUI code here. If you want to simply extend the existing editor call the base OnInspectorGUI () before doing any custom GUI code.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.RawImageEditor.OnPreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)">
+      <summary>
+        <para>Custom preview for Image component.</para>
+      </summary>
+      <param name="rect">Rectangle in which to draw the preview.</param>
+      <param name="background">Background image.</param>
+    </member>
+    <member name="M:UnityEditor.UI.ScrollbarEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.ScrollRectEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.SelectableEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.SelfControllerEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.SliderEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.TextEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.UI.ToggleEditor.OnInspectorGUI">
+      <summary>
+        <para>See <see cref="Editor.OnInspectorGUI"></see>.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.UIOrientation.Portrait">
+      <summary>
+        <para>Portrait.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.UIOrientation.PortraitUpsideDown">
+      <summary>
+        <para>Portrait upside down.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.UIOrientation.LandscapeRight">
+      <summary>
+        <para>Landscape: clockwise from Portrait.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.UIOrientation.LandscapeLeft">
+      <summary>
+        <para>Landscape : counter-clockwise from Portrait.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.UIOrientation.AutoRotation">
+      <summary>
+        <para>Auto Rotation Enabled.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

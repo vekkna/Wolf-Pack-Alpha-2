@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Wolf Pack Alpha 2.CSharp.Editor", "UnityVS.Wolf Pack Alpha 2.CSharp.Editor.csproj", "{B3C5FFCD-46A6-FCD8-A982-79527493977A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Wolf Pack Alpha 2.CSharp", "UnityVS.Wolf Pack Alpha 2.CSharp.csproj", "{5D7DA48A-BE98-BCE5-EA16-FBECF55313CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Wolf Pack Alpha 2.CSharp.Plugins", "UnityVS.Wolf Pack Alpha 2.CSharp.Plugins.csproj", "{8D033A0E-EEF9-9474-281D-14CCABD744E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3C5FFCD-46A6-FCD8-A982-79527493977A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C5FFCD-46A6-FCD8-A982-79527493977A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C5FFCD-46A6-FCD8-A982-79527493977A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C5FFCD-46A6-FCD8-A982-79527493977A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D7DA48A-BE98-BCE5-EA16-FBECF55313CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D7DA48A-BE98-BCE5-EA16-FBECF55313CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D7DA48A-BE98-BCE5-EA16-FBECF55313CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D7DA48A-BE98-BCE5-EA16-FBECF55313CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D033A0E-EEF9-9474-281D-14CCABD744E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D033A0E-EEF9-9474-281D-14CCABD744E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D033A0E-EEF9-9474-281D-14CCABD744E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D033A0E-EEF9-9474-281D-14CCABD744E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
